@@ -1,0 +1,23 @@
+{
+  "name": "max-profits",
+  "version": "1.0.0",
+  "description": "Find the max profits from an array of numbers",
+  "main": "max.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnTheScout/maxProfit.git"
+  },
+  "author": "John Goff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnTheScout/maxProfit/issues"
+  },
+  "homepage": "https://github.com/JohnTheScout/maxProfit#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
