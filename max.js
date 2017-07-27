@@ -13,8 +13,19 @@ function maxProfit(array) {
 
   var maxProfit = 0;
   var pair = [0, -1];
+
   for (var i = 0; i < array.length; i++) {
+    if (typeof array[i] !== 'number'
+      && Number.isNaN(parseInt(array[i], 10))) {
+      continue;
+    }
+
     for (var j = i + 1; j < array.length; j++) {
+      if (typeof array[j] !== 'number'
+        && Number.isNaN(parseInt(array[i], 10))) {
+          continue;
+      }
+
       var current = compare(array[i], array[j]);
       if (current > maxProfit) {
         maxProfit = current;
@@ -23,6 +34,8 @@ function maxProfit(array) {
       }
     }
   }
+
+  console.log(pair)
   return compare(pair[0], pair[1]);
 }
 
